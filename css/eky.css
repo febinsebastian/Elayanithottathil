@@ -1,0 +1,583 @@
+body {
+	font-family: LatoWeb;
+	color: #707070;
+	font-size: 20px;
+}
+
+h1 {
+	font-size: 50px;
+	font-family: 'LatoWebLight';
+	color: #4CAF50;
+}
+
+p {
+	font-size: 20px;
+}
+
+.mbr-arrow {
+	bottom: 71px;
+	left: 0;
+	line-height: 1px;
+	padding: 0 20px;
+	position: absolute;
+	width: 100%;
+	z-index: 3;
+}
+
+.mbr-arrow__link {
+	display: inline-block;
+	font-size: 26px;
+}
+
+.mbr-arrow__link, .mbr-arrow__link:hover, .mbr-arrow__link:focus {
+	color: #fff;
+}
+
+.mbr-arrow--floating .mbr-arrow__link {
+	-webkit-animation: floating-arrow 1.6s infinite ease-in-out 0s;
+	-o-animation: floating-arrow 1.6s infinite ease-in-out 0s;
+	animation: floating-arrow 1.6s infinite ease-in-out 0s;
+}
+
+@-webkit-keyframes floating-arrow {
+	from { 
+	-webkit-transform:translateY(0);
+	transform: translateY(0);
+}
+
+65%
+{
+-webkit-transform:translateY(17px);
+transform:translateY(17px);
+}
+to {
+	-webkit-transform: translateY(0);
+	transform: translateY(0);
+}
+
+}
+@-o-keyframes floating-arrow {from { -webkit-transform:translateY(0);
+	transform: translateY(0);
+}
+
+65%
+{
+-webkit-transform:translateY(17px);
+transform:translateY(17px);
+}
+to {
+	-webkit-transform: translateY(0);
+	transform: translateY(0);
+}
+
+}
+@
+keyframes floating-arrow {from { -webkit-transform:translateY(0);
+	transform: translateY(0);
+}
+
+65%
+{
+-webkit-transform:translateY(17px);
+transform:translateY(17px);
+}
+to {
+	-webkit-transform: translateY(0);
+	transform: translateY(0);
+}
+
+}
+.mbr-arrow--dark .mbr-arrow__link, .mbr-arrow--dark .mbr-arrow__link:hover,
+	.mbr-arrow--dark .mbr-arrow__link:focus {
+	color: #252525;
+}
+
+#toTop {
+	display: none;
+	text-decoration: none;
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	overflow: hidden;
+	width: 44px;
+	height: 44px;
+	border: none;
+	text-indent: 100%;
+	background: url(images/top_move.png) no-repeat right top;
+}
+
+/* Radial Out */
+.hvr-radial-out {
+	display: inline-block;
+	vertical-align: middle;
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-moz-osx-font-smoothing: grayscale;
+	position: relative;
+	overflow: hidden;
+	background: #e1e1e1;
+	-webkit-transition-property: color;
+	transition-property: color;
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+}
+
+.hvr-radial-out:before {
+	content: "";
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: #2098d1;
+	border-radius: 100%;
+	-webkit-transform: scale(0);
+	transform: scale(0);
+	-webkit-transition-property: transform;
+	transition-property: transform;
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+	-webkit-transition-timing-function: ease-out;
+	transition-timing-function: ease-out;
+}
+
+.hvr-radial-out:hover, .hvr-radial-out:focus, .hvr-radial-out:active {
+	color: white;
+}
+
+.hvr-radial-out:hover:before, .hvr-radial-out:focus:before,
+	.hvr-radial-out:active:before {
+	-webkit-transform: scale(2);
+	transform: scale(2);
+}
+
+#header {
+	position: absolute;
+	right: 0;
+	left: 0;
+	z-index: 1030;
+}
+
+.navbar {
+	border-radius: 0px;
+	margin-bottom: 0;
+	background-color: #fff;
+	min-height: 85px;
+	font-size: 30px;
+}
+
+.navbar-nav>li {
+	color: #4E525D;
+	font-size: 1em;
+	padding: 0.6em 0.9em;
+	display: block;
+	transition: 0.5s all;
+	-webkit-transition: 0.51s all;
+	-moz-transition: 0.5s all;
+	-o-transition: 0.5s all;
+	border-bottom: 2px solid #fff;
+}
+
+.navbar-nav>li:hover {
+	border-bottom: 2px solid #49CBCD;
+	color: #49CBCD;
+	background: #EEE;
+}
+
+.nav>li>a {
+	padding: 13px 2px;
+}
+
+@media ( max-width : 767px) {
+	#heading {
+		margin: 30px 0 30px 0;
+		opacity: 1;
+	}
+	#history, #gallery, #committee, #news_events {
+		padding-bottom: 40px;
+	}
+	#history, #committee {
+		background-color: rgb(100, 88, 98) !important;
+		color: #fff;
+	}
+	#history p {
+		text-align: center;
+		line-height: 2;
+	}
+	#gallery {
+		background: #f3f3f3 url('images/overlay.png');
+	}
+	#family_name {
+		font-size: 40px;
+		color: #0B5415;
+		margin: 77px 0 80px 0;
+		font-family: LatoWebSemibold;
+	}
+	#bible_quote {
+		font-size: 20px;
+		color: #001A3C;
+		-moz-transition: -moz-transform 0.4s ease-in-out;
+		-webkit-transition: -webkit-transform 0.4s ease-in-out;
+		-o-transition: -o-transform 0.4s ease-in-out;
+	}
+	#main_head h3 {
+		font-size: 23px;
+		color: #001A3C;
+		font-style: italic;
+	}
+	#main_head {
+		z-index: 1;
+		width: 100%;
+		height: 580px;
+		display: block;
+		position: relative;
+	}
+	#main_head::after {
+		content: "";
+		background: url("images/holyfamily.jpg") no-repeat;
+		opacity: 0.5;
+		position: absolute;
+		z-index: -1;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	}
+	.forefathers {
+		font-size: 25px;
+		color: #2c7ad2;
+		font-weight: bold;
+	}
+	#download_btn {
+		width: 100%;
+		color: #fff;
+		background-color: #e97770;
+		border-radius: 40px;
+		margin: 20px 0 20px 0;
+		border: 1px solid #e97770;
+		height: 50px;
+		font-size: 25px;
+	}
+	#commitee_img {
+		margin-right: 15px;
+		border-radius: 50%;
+		width: 70%;
+		height: 190px;
+		margin-top: 15px;
+		border: 0.15em solid #e4e4e4;
+	}
+	#name {
+		color: #49CBCD;
+		font-size: 24px;
+	}
+	#designation {
+		font-family: LatoWebHeavy;
+		font-size: 25px;
+	}
+	#place {
+		font-size: 20px;
+	}
+	.gallery-image {
+		width: 100%;
+		height: 190px;
+		margin: 15px 0 15px 0;
+		border-radius: 7px;
+	}
+	#news_events ul {
+		list-style: none;
+		font-size: 25px;
+	}
+	#footer {
+		padding-top: 15px;
+		height: 60px;
+		background-color: #e4e4e4;
+		height: 60px;
+	}
+}
+
+@media ( min-width :768px) {
+	#heading {
+		margin: 30px 0 30px 0;
+		opacity: 1;
+	}
+	#history, #gallery, #committee, #news_events {
+		padding-bottom: 40px;
+	}
+	#history {
+		background-color: rgb(100, 88, 98) !important;
+		color: #fff;
+	}
+	#history p {
+		text-align: center;
+		line-height: 2;
+	}
+	#committee {
+		background-color: rgb(100, 88, 98) !important;
+		color: #fff;
+	}
+	#gallery {
+		background: #f3f3f3 url('images/overlay.png');
+	}
+	#family_name {
+		font-size: 73px;
+		color: #0B5415;
+		margin: 77px 0 80px 0;
+		font-family: LatoWebSemibold;
+	}
+	.forefathers {
+		font-size: 25px;
+		color: #2c7ad2;
+		font-weight: bold;
+	}
+	#bible_quote {
+		font-size: 27px;
+		color: #001A3C;
+	}
+	#main_head h3 {
+		font-size: 23px;
+		color: #001A3C;
+		font-style: italic;
+	}
+	#main_head {
+		z-index: 1;
+		width: 100%;
+		height: 580px;
+		display: block;
+		position: relative;
+		width: 100%;
+	}
+	#main_head::after {
+		content: "";
+		background: url("images/holyfamily.jpg") no-repeat;
+		opacity: 0.5;
+		position: absolute;
+		z-index: -1;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		top: 0;
+	}
+	#download_btn {
+		width: 100%;
+		color: #fff;
+		background-color: #e97770;
+		border-radius: 40px;
+		margin: 20px 0 20px 0;
+		border: 1px solid #e97770;
+		height: 50px;
+		font-size: 25px;
+	}
+	#download_btn:hover {
+		
+	}
+	#commitee_img {
+		margin-right: 15px;
+		border-radius: 50%;
+		width: 70%;
+		height: 190px;
+		margin-top: 15px;
+		border: 0.15em solid #e4e4e4;
+	}
+	#name {
+		color: #49CBCD;
+		font-size: 24px;
+	}
+	#designation {
+		font-family: LatoWebHeavy;
+		font-size: 25px;
+	}
+	#place {
+		font-size: 20px;
+	}
+	.gallery-image {
+		width: 100%;
+		height: 190px;
+		margin: 15px 0 15px 0;
+		border-radius: 7px;
+	}
+	#footer {
+		padding-top: 15px;
+		height: 60px;
+		background-color: #e4e4e4;
+	}
+	#news_events ul {
+		list-style: none;
+		font-size: 25px;
+	}
+}
+
+@media ( min-width :415px) and (max-width :583px) {
+	#name {
+		font-size: 14px !important;
+	}
+	#designation {
+		font-size: 17px;
+		font-weight: normal;
+	}
+	.gallery-image {
+		margin: 5px;
+		height: 110px
+	}
+	#history p {
+		text-align: justify;
+		line-height: 1.7;
+	}
+	.forefathers {
+		text-align: left;
+		line-height: 2;
+	}
+	#commitee_img{
+	height: 160px;
+	}
+}
+
+@media ( min-width :320px) and (max-width :414px) {
+	#download_btn {
+		margin: 20px 0 20px 0;
+		height: 50px;
+		font-size: 25px;
+	}
+	#family_name {
+		font-size: 30px;
+	}
+	#bible_quote {
+		font-size: 20px;
+	}
+	#commitee_img {
+		margin-right: 10px;
+		border-radius: 50%;
+		width: 70%;
+		height: 113px;
+		border: 0.15em solid #e4e4e4;
+	}
+	#name {
+		font-size: 14px !important;
+	}
+	#designation {
+		font-size: 17px;
+		font-weight: normal;
+	}
+	.gallery-image {
+		margin: 10px 0 10px 0;
+		height: 80px
+	}
+	#footer {
+		padding-top: 5px;
+	}
+	#news_events ul {
+		font-size: 17px;
+	}
+	#history p {
+		text-align: justify;
+		line-height: 1.7;
+	}
+	.forefathers {
+		text-align: left;
+		line-height: 2;
+	}
+}
+
+@media ( min-width :240px) and (max-width :319px) {
+	#download_btn {
+		margin: 20px 0 20px 0;
+		height: 50px;
+		font-size: 25px;
+	}
+	#family_name {
+		color: #fff;
+		font-size: 20px;
+	}
+	#bible_quote {
+		font-size: 15px;
+	}
+	#commitee_img {
+		margin-right: 10px;
+		border-radius: 50%;
+		width: 70%;
+		height: 111px;
+		border-radius: 100px;
+		border: 0.15em solid #e4e4e4;
+	}
+	#name {
+		font-size: 14px !important;
+	}
+	#designation {
+		font-size: 17px;
+		font-weight: normal;
+	}
+	.gallery-image {
+		margin: 10px 0 10px 0;
+		height: 80px;
+	}
+	#footer {
+		padding-top: 5px;
+	}
+	#news_events ul {
+		font-size: 17px;
+	}
+	#history p {
+		text-align: justify;
+		line-height: 1.7;
+	}
+	.forefathers {
+		text-align: left;
+		line-height: 2;
+	}
+}
+
+      ul li {     
+          list-style:none;
+      }
+      ul li img {
+          cursor: pointer;
+      }
+      .modal-body {
+          padding:5px !important;
+      }
+      .modal-content {
+          border-radius:0;
+      }
+      .modal-dialog img {
+          text-align:center;
+          margin:0 auto;
+      }
+    .controls{          
+        width:50px;
+        display:block;
+        font-size:11px;
+        padding-top:8px;
+        font-weight:bold;          
+    }
+    .next {
+        float:right;
+        text-align:right;
+    }
+      /*override modal for demo only*/
+      .modal-dialog {
+          max-width:500px;
+          padding-top: 90px;
+      }
+      @media screen and (min-width: 768px){
+          .modal-dialog {
+              width:500px;
+              padding-top: 90px;
+          }          
+      }
+      @media screen and (max-width:1500px){
+          #ads {
+              display:none;
+          }
+      }
